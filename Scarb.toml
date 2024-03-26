@@ -1,0 +1,14 @@
+[package]
+name = "bar"
+version = "0.1.0"
+
+[dependencies]
+starknet = "2.6.0"
+openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts", branch = "main" }
+
+[tool.fmt]
+sort-module-level-items = true
+
+[[target.starknet-contract]]
+sierra = true
+casm = true
